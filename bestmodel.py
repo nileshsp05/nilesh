@@ -2,6 +2,13 @@ import streamlit as st
 import pickle
 import numpy as np
 
+
+headers={
+  "autherization":st.secrets["auth_token"]
+} 
+
+
+
 # import the model
 pipe = pickle.load(open('model.pkl', 'rb'))
 df = pickle.load(open('df.pkl', 'rb'))
