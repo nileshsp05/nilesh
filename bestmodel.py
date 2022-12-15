@@ -3,10 +3,6 @@ import pickle
 import numpy as np
 
 
-headers={
-  "autherization":st.secrets["auth_token"]
-} 
-
 
 
 # import the model
